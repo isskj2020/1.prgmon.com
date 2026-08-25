@@ -15,8 +15,8 @@ export default function Page() {
   const profile = profiles[lang]
 
   return (
-    <main className='mx-auto max-w-4xl bg-white text-gray-900'>
-      <div className='px-8 py-8'>
+    <main className='mx-auto w-[90%] max-w-4xl bg-white text-gray-900'>
+      <div className='px-5 py-10 sm:px-10 sm:py-20'>
 
         <div className="flex justify-end gap-2">
           <button
@@ -58,7 +58,7 @@ export default function Page() {
             {profile.workExperiences.map((item) => (
               <div
                 key={`${item.date}-${item.desc}`}
-                className='grid gap-2 sm:grid-cols-[180px_1fr]'
+                className='grid gap-2 sm:grid-cols-[180px_minmax(0,1fr)]'
               >
                 <div className='text-sm text-gray-500'>
                   {item.date}
@@ -81,7 +81,7 @@ export default function Page() {
             {profile.educations.map((item) => (
               <div
                 key={`${item.date}-${item.desc}`}
-                className='grid gap-2 sm:grid-cols-[180px_1fr]'
+                className='grid gap-2 sm:grid-cols-[180px_minmax(0,1fr)]'
               >
                 <div className='text-sm text-gray-500'>
                   {item.date}
@@ -104,7 +104,7 @@ export default function Page() {
             {profile.additionalSkills.map((item) => (
               <div
                 key={`${item.date}-${item.desc}`}
-                className='grid gap-2 sm:grid-cols-[180px_1fr]'
+                className='grid gap-2 sm:grid-cols-[180px_minmax(0,1fr)]'
               >
                 <div className='text-sm text-gray-500'>
                   {item.date}
@@ -124,7 +124,7 @@ export default function Page() {
           </h2>
 
         
-          <div className='flex items-center gap-5'>
+          <div className='flex flex-wrap items-center gap-5'>
             <a
               href={profile.github}
               target='_blank'
