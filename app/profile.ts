@@ -29,7 +29,7 @@ export const profiles = {
 
     educations: [
       {
-        date: 'Sep. 2025 - Aug. 2026',
+        date: 'Sep. 2025 - Sep. 2026',
         desc: 'MSc Advanced Computer Science, University of Liverpool',
       },
       {
@@ -91,7 +91,7 @@ export const profiles = {
 
     educations: [
       {
-        date: '2025年9月 - 2026年8月',
+        date: '2025年9月 - 2026年9月',
         desc: 'MSc Advanced Computer Science, University of Liverpool',
       },
       {
